@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="496.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdaproject.AutoheimerUI">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="919.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@homepage.png" />
+         </image>
+      </ImageView>
+      <Line endX="-100.0" endY="116.0" layoutX="423.0" layoutY="381.0" startX="-100.0" startY="-172.0" />
+      <Button fx:id="searchVehicleButton" layoutX="53.0" layoutY="157.0" mnemonicParsing="false" onAction="#SVClick" prefHeight="52.0" prefWidth="158.0" text="Search Vehicle">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="PostadButton" layoutX="53.0" layoutY="355.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="158.0" text="Post Ad" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="53.0" layoutY="413.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="158.0" text="Get Verification" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="InboxButton" layoutX="53.0" layoutY="298.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="158.0" text="Inbox" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="EditAddButton" layoutX="53.0" layoutY="350.0" mnemonicParsing="false" onAction="#GetADs" prefHeight="52.0" prefWidth="158.0" text="Edit Ad">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="402.0" fitWidth="695.0" layoutX="302.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@homepicture.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="CompareCar" layoutX="53.0" layoutY="248.0" mnemonicParsing="false" onAction="#CCClick" prefHeight="52.0" prefWidth="158.0" text="Compare Cars">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="106.0" layoutY="41.0" mnemonicParsing="false" onAction="#logout" text="Log Out" />
+   </children>
+</AnchorPane>

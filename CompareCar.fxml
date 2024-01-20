@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdaproject.CompareCarUI">
+   <children>
+       <ImageView fx:id="image1" fitHeight="465.0" fitWidth="654.0" layoutX="4.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="CCHeading" layoutX="229.0" layoutY="30.0" text="Compare Cars" textAlignment="CENTER" textFill="#1d380b">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <SplitPane fx:id="S2" dividerPositions="0.5007751937984496" layoutX="8.0" layoutY="158.0" opacity="0.71" prefHeight="156.0" prefWidth="647.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="137.0" prefWidth="319.0">
+               <children>
+                  <Label layoutX="27.0" layoutY="48.0" text="Choose Car 1" textFill="#551212">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="BT1" layoutX="137.0" layoutY="110.0" mnemonicParsing="false" onAction="#BT1Click" text="Submit" />
+                  <ComboBox fx:id="CB1" layoutX="27.0" layoutY="73.0" prefHeight="25.0" prefWidth="274.0" promptText="Car 1" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="21.0" layoutY="44.0" text="Choose Car 2" textFill="#551212">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="BT2" layoutX="131.0" layoutY="108.0" mnemonicParsing="false" onAction="#BT2Click" text="Submit" />
+                  <ComboBox fx:id="CB2" layoutX="22.0" layoutY="73.0" prefWidth="274.0" promptText="Car 2" />
+      
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <SplitPane fx:id="S1" dividerPositions="0.5, 0.5" layoutX="7.0" layoutY="237.0" opacity="0.7" prefHeight="249.0" prefWidth="647.0" visible="false">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <GridPane fx:id="G1" layoutX="9.0" layoutY="7.0" prefHeight="234.0" prefWidth="300.0" visible="false">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Company" />
+                        <Label text="Model" GridPane.rowIndex="1" />
+                        <Label text="Year" GridPane.rowIndex="2" />
+                        <Label text="Engine Size" GridPane.rowIndex="3" />
+                        <Label text="Price" GridPane.rowIndex="4" />
+                        <Label text="Transmission" GridPane.rowIndex="5" />
+                        <Label text="Car Type" GridPane.rowIndex="6" />
+                        <Label text="Mileage" GridPane.rowIndex="7" />
+                        <Label fx:id="L1" text="Label" GridPane.columnIndex="1" />
+                        <Label fx:id="L2" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="L3" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="L4" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="L5" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="L6" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="L7" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label fx:id="L8" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+            <GridPane fx:id="G2" prefHeight="234.0" prefWidth="300.0" visible="false">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Company" />
+                  <Label text="Model" GridPane.rowIndex="1" />
+                  <Label text="Year" GridPane.rowIndex="2" />
+                  <Label text="Engine Size" GridPane.rowIndex="3" />
+                  <Label text="Price" GridPane.rowIndex="4" />
+                  <Label text="Transmission" GridPane.rowIndex="5" />
+                  <Label text="Car Type" GridPane.rowIndex="6" />
+                  <Label text="Mileage" GridPane.rowIndex="7" />
+                  <Label fx:id="L11" text="Label" GridPane.columnIndex="1" />
+                  <Label fx:id="L21" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="L31" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="L41" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="L51" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="L61" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="L71" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="L81" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+               </children>
+            </GridPane>
+        </items>
+      </SplitPane>
+      <Label fx:id="Hid1" layoutX="14.0" layoutY="14.0" text="Label" visible="false" />
+      <Label fx:id="Hid2" layoutX="627.0" layoutY="6.0" text="Label" visible="false" />
+      <Button fx:id="HomeButton" layoutX="28.0" layoutY="42.0" mnemonicParsing="false" onAction="#GoHome" text="Home" textAlignment="CENTER" textFill="#043607">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+
+   </children>
+</Pane>

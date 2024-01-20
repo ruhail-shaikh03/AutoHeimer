@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="495.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sdaproject.AdServiceUI">
+   <children>
+      <ImageView fx:id="bgAD" fitHeight="81.0" fitWidth="665.0" layoutX="0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@homepage.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="429.0" fitWidth="674.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pexels-lalesh-aldarwish-168938.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="listvAD" layoutX="37.0" layoutY="148.0" opacity="0.8" prefHeight="200.0" prefWidth="595.0" visible="false" />
+      <ComboBox fx:id="CBAD" layoutX="143.0" layoutY="368.0" prefHeight="25.0" prefWidth="378.0" promptText="Choose Package" visible="false" />
+      <Button fx:id="ADBT" layoutX="317.0" layoutY="410.0" mnemonicParsing="false" onAction="#Submit" text="Pay" visible="false" />
+      <Label fx:id="head" layoutX="195.0" layoutY="96.0" text="Advertisement Service" textFill="#9d1e1e" visible="false">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <SplitPane fx:id="SP1" dividerPositions="0.5009345794392523" layoutX="64.0" layoutY="93.0" opacity="0.85" prefHeight="373.0" prefWidth="537.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="adlist" layoutX="18.0" layoutY="16.0" prefHeight="340.0" prefWidth="228.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="CB1" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button fx:id="BTAD1" layoutX="55.0" layoutY="173.0" mnemonicParsing="false" onAction="#Click" text="Get Advertisement Service" />
+                  <ComboBox fx:id="CBAD1" layoutX="24.0" layoutY="115.0" prefHeight="25.0" prefWidth="217.0" promptText="Choose Listing" />
+                  <Label layoutX="82.0" layoutY="30.0" text="Edit Listing" textFill="#941818">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+
+   </children>
+</AnchorPane>
